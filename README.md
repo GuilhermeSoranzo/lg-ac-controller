@@ -117,10 +117,6 @@ StartupRegistration.cs             start with Windows (HKCU Run key)
 - Anyone holding your token can see and control your LG devices. If it leaks, revoke it at connect-pat.lgthinq.com.
 - The `x-api-key` value in the code is a public constant from [LG's official SDK](https://github.com/thinq-connect/pythinqconnect). It is not a secret.
 
-### Tested with
-
-LG Split Hi Wall Dual Inverter Voice `S4NW12JA3XB` (ThinQ model `RAC_056905_WW`). Other LG ACs should work, as long as they support the features above.
-
 ---
 
 ## Português
@@ -208,7 +204,3 @@ Os comandos são JSONs pequenos, por exemplo `{"operation":{"airConOperationMode
 - O token é lido da variável de ambiente `LG_THINQ_PAT` e nunca fica no repositório.
 - Quem tiver o seu token consegue ver e controlar seus aparelhos LG. Se ele vazar, revogue em connect-pat.lgthinq.com.
 - O valor de `x-api-key` no código é uma constante pública do [SDK oficial da LG](https://github.com/thinq-connect/pythinqconnect). Não é segredo.
-
-### Testado com
-
-LG Split Hi Wall Dual Inverter Voice `S4NW12JA3XB` (modelo ThinQ `RAC_056905_WW`). Outros aparelhos LG devem funcionar, desde que tenham os recursos acima.
