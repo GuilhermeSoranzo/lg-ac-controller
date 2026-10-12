@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>LGClimaTray</RootNamespace>
+    <AssemblyName>LGClimaTray</AssemblyName>
+    <ApplicationIcon>Assets\app.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Evita conflitos (Brush, Color, MessageBox...) entre WPF e WinForms -->
+    <Using Remove="System.Drawing" />
+    <Using Remove="System.Windows.Forms" />
+  </ItemGroup>
+</Project>
